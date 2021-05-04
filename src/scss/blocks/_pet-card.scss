@@ -1,0 +1,78 @@
+.pet-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 440px;
+  height: 747px;
+  padding: 470px 30px 50px 30px;
+  background-color: $body-color;
+  border-radius: 5px;
+  color: $light-color;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  @media (max-width: $width-1200) {
+    width: 455px;
+    height: 716px;
+  }
+}
+.pet-card:hover {
+  z-index: 1;
+  transform: scale(1.05);
+}
+.pet-card__button {
+  width: 240px;
+  height: 73px;
+  text-decoration: none;
+}
+.pet-card__description {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: inherit;
+}
+.pet-card__name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: inherit;
+  background-color: $body-color;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pet-card__photo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  color: inherit;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.pet-card__photo-wrapper {
+  // width: auto;
+  // height: auto;
+}
+.pet-card__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: inherit;
+}

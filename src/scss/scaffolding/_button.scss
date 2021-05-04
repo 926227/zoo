@@ -1,0 +1,139 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  background-color: $second-color;
+  border: 0;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.button:hover,
+.button:active {
+  background-color: $second-color-hover;
+}
+
+.button__text {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $light-color;
+}
+.button__img {
+  width: 25px;
+  height: 22px;
+  background-image: url(assets/icons/arrow-button-light.svg);
+  background-repeat: no-repeat;
+}
+
+.button--transparent-dark {
+  .button__text {
+    color: $body-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-dark.svg);
+  }
+  border: 1px solid $body-color;
+  background-color: transparent;
+}
+.button--transparent-dark:hover {
+  .button__text {
+    color: $light-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-light.svg);
+  }
+  background-color: $body-color;
+}
+.button--transparent-dark-no-border {
+  .button__text {
+    color: $body-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-dark.svg);
+  }
+  border: none;
+  background-color: transparent;
+}
+.button--transparent-dark-no-border:hover {
+  .button__text {
+    color: $light-color;
+  }
+  border: 1px solid $body-color;
+  background-color: transparent;
+}
+.button--transparent-light {
+  .button__text {
+    color: $light-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-light.svg);
+  }
+  border: 1px solid $light-color;
+  background-color: transparent;
+}
+.button--transparent-light:hover {
+  .button__text {
+    color: $body-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-dark.svg);
+  }
+  background-color: $light-color;
+}
+.button--transparent-light-green {
+  .button__text {
+    color: $light-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-light.svg);
+  }
+  border: 1px solid $light-color;
+  background-color: transparent;
+}
+.button--transparent-light-green:hover {
+  background-color: $main-color;
+}
+
+.button--noborder {
+  .button__text {
+    color: $second-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-orange.svg);
+  }
+  background-color: transparent;
+}
+.button--noborder:hover {
+  .button__text {
+    color: $light-color;
+  }
+  .button__img {
+    background-image: url(assets/icons/arrow-button-light.svg);
+  }
+  background-color: $second-color;
+}
+
+.button--green {
+  background-color: $main-color;
+}
+.button--green:hover {
+  background-color: $main-color-hover;
+}
+.button--link {
+  background-color: transparent;
+  border: none;
+  .button__text {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: $main-color;
+  }
+}
+.button--link:hover {
+  background-color: transparent;
+}

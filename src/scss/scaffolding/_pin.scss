@@ -1,0 +1,96 @@
+.pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 120px;
+  transform: translate(-50%, -100%);
+  border: none;
+  background-color: transparent;
+  background-image: url(assets/icons/pin-animal-location.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  filter: drop-shadow(0px 4px 10px rgba(245, 128, 33, 0.7));
+}
+
+.pin.kept-in-zoo:hover,
+.pin.kept-in-zoo:focus {
+  cursor: pointer;
+  background-image: url(assets/icons/pin-animal-location-active.svg);
+}
+
+// .pin[tooltip]:hover,
+// .pin[tooltip]:focus {
+//   z-index: 1;
+// }
+// .pin[tooltip]:hover::after,
+// .pin[tooltip]:focus::after {
+//   content: attr(tooltip);
+//   position: absolute;
+//   transform: translateX(105%);
+//   display: flex;
+//   padding: 5px;
+//   border-radius: 25%;
+//   color: $light-color;
+//   text-transform: capitalize;
+//   font-weight: 500;
+//   box-shadow: 3px 3px 2px #00000066;
+//   background-color: $main-color-tranperent;
+// }
+
+.pin:nth-of-type(1) {
+  top: 59%;
+  left: 15%;
+}
+.pin:nth-of-type(2) {
+  top: 59%;
+  left: 24%;
+}
+.pin:nth-of-type(3) {
+  top: 63%;
+  left: 44%;
+}
+.pin:nth-of-type(4) {
+  top: 67%;
+  left: 52.5%;
+}
+.pin:nth-of-type(5) {
+  top: 80%;
+  left: 60%;
+}
+.pin:nth-of-type(6) {
+  top: 54%;
+  left: 71%;
+}
+.pin:nth-of-type(7) {
+  top: 70%;
+  left: 75.5%;
+}
+.pin:nth-of-type(8) {
+  top: 83%;
+  left: 85%;
+}
+
+.pin__img {
+  height: 38%;
+  margin-top: 14px;
+}
+
+@media (max-width: $width-640) {
+  .pin {
+    width: 42px;
+    height: 60px;
+  }
+  .pin__img {
+    margin-top: 5px;
+  }
+}
+@media (max-width: $width-320) {
+  .pin {
+    width: 35px;
+    height: 50px;
+  }
+}

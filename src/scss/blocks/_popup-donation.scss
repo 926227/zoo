@@ -1,0 +1,112 @@
+.popup-donation {
+  position: fixed;
+  display: none;
+  z-index: 5;
+  top: 0px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #00000055;
+  overflow: hidden;
+}
+
+.popup-donation__container {
+  display: grid;
+  grid-template-rows: 222px 1fr 174px;
+  width: 920px;
+  height: 820px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 4px 50px #000000c4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.popup-donation__description {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  padding-left: 123px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: $dark-color;
+}
+.popup-donation__form {
+  padding-top: 41px;
+
+  padding-right: 120px;
+  padding-left: 120px;
+}
+.popup-donation__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-right: 120px;
+  padding-bottom: 50px;
+  padding-left: 120px;
+}
+.popup-donation__header {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid #a4a8ae;
+}
+.popup-donation__next-button {
+  width: 200px;
+  height: 74px;
+  margin-right: 105px;
+}
+.popup-donation__next-button.form-donation__submit {
+  width: 360px;
+  margin-right: 0;
+}
+.form-donation__submit:disabled {
+  opacity: 0.5;
+  filter: blur(1px);
+}
+.form-donation__submit:disabled:hover {
+  background-color: $second-color;
+  cursor: default;
+}
+
+.popup-donation__progressbar {
+  display: flex;
+  justify-content: space-between;
+  /* items*item__width + space-between*(items-1)*/
+  width: calc(10px * 3 + 10px * 2);
+  height: 10px;
+}
+.popup-donation__progressbar-point {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid $main-color;
+  border-radius: 100%;
+}
+.popup-donation__progressbar-point.fill {
+  background-color: $main-color;
+}
+.popup-donation__prev-button {
+  display: none;
+  width: 100px;
+  height: 74px;
+}
+.popup-donation__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 135px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-color;
+  background-color: $second-color;
+}

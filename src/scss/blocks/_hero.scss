@@ -1,0 +1,86 @@
+.hero {
+  background-image: url(assets/images/hero-1x.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: $width-1200) {
+  }
+  @media (max-width: $width-640) {
+    background-image: url(assets/images/hero-1x-640.jpg);
+    background-position: 50% 100%;
+    background-size: 100%;
+  }
+  @media (max-width: $width-320) {
+    background-image: url(assets/images/hero-1x-320.jpg);
+  }
+}
+.hero .container {
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 132px;
+  padding-bottom: 130px;
+  @media (min-width: $width-640+1) and (max-width: $width-1200) {
+    max-width: 1120px;
+    padding-top: 103px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: $width-640) {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  @media (max-width: $width-320) {
+    padding-top: 22px;
+    padding-bottom: 280px;
+  }
+}
+.hero__title {
+  max-width: 890px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 82px;
+  line-height: 100px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $main-color;
+  @media (max-width: $width-1200) {
+    margin-bottom: 9px;
+  }
+  @media (max-width: $width-640) {
+    max-width: 100%;
+    font-size: 72px;
+    line-height: 88px;
+  }
+  @media (max-width: $width-320) {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+.hero__description {
+  max-width: 430px;
+  margin-bottom: 43px;
+  color: $dark-color;
+  @media (max-width: $width-1200) {
+    width: 340px;
+    margin-bottom: 21px;
+  }
+  @media (max-width: $width-1200) {
+    margin-bottom: 23px;
+  }
+  @media (max-width: $width-320) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+}
+.hero__button {
+  width: 240px;
+  height: 75px;
+  @media (max-width: $width-640) {
+    width: 285px;
+  }
+  @media (max-width: $width-320) {
+    width: 100%;
+    height: 45px;
+  }
+}

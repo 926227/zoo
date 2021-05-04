@@ -1,0 +1,116 @@
+.active .list__link {
+  cursor: default;
+}
+.page-header {
+  height: 110px;
+  background-color: $second-color;
+  @media (max-width: $width-640) {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    &.page__item + * {
+      margin-top: 110px;
+    }
+  }
+}
+.page-header .container {
+  position: relative;
+  @media (max-width: $width-320) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.page-header__menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.page-header__logo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 96px;
+  height: 50px;
+}
+.page-header__logo:hover {
+  filter: drop-shadow(0 0 2px $main-color);
+}
+.page-header__nav {
+  display: flex;
+  width: 555px;
+  margin-right: 65px;
+  @media (max-width: 1200px) {
+    width: 480px;
+    margin-top: 3px;
+    margin-right: 80px;
+  }
+  @media (max-width: $width-640) {
+    display: none;
+  }
+}
+.page-header__nav .list {
+  width: 100%;
+}
+.page-header__nav .active {
+  color: $main-color;
+}
+.page-header__nav .list__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.page-header__nav .list__item:not(.active):hover {
+  transform: scale(1.1);
+}
+
+.page-header__social-icons {
+  width: 180px;
+  @media (max-width: $width-640) {
+    display: none;
+  }
+}
+
+.page-header__toggle {
+  position: absolute;
+  right: 18px;
+  top: 33px;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+
+  @media (min-width: $width-640+1) {
+    display: none;
+  }
+  @media (max-width: $width-320) {
+    right: 4px;
+    top: 32px;
+  }
+}
+
+.page-header__menu--closed .page-header__toggle::before {
+  content: "";
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 14px 0 0 #000000, 0 28px 0 0 #000000;
+  @media (max-width: $width-320) {
+    width: 22px;
+    right: 10px;
+  }
+}

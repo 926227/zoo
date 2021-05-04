@@ -1,0 +1,186 @@
+// TODO привести медиаправила к одному стилю
+
+.pets-in-zoo .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 135px;
+  padding-bottom: 150px;
+  @media (max-width: $width-1200) {
+    max-width: 1120px;
+    padding-top: 102px;
+  }
+  @media (max-width: $width-640) {
+    padding-top: 104px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: $width-320) {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 7px;
+  }
+}
+.pets-in-zoo__choose {
+  width: 360px;
+  height: 75px;
+  @media (max-width: $width-640) {
+    width: 344px;
+  }
+  @media (max-width: $width-320) {
+    display: none;
+  }
+}
+.pets-in-zoo__description {
+  max-width: 920px;
+  margin-bottom: 100px;
+  text-align: center;
+  @media (max-width: $width-1200) {
+    max-width: 830px;
+  }
+  @media (max-width: $width-640) {
+    margin-bottom: 53px;
+  }
+  @media (max-width: $width-320) {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+.pets-in-zoo__slider {
+  position: relative;
+  align-self: start;
+  justify-content: start;
+  min-width: 100%;
+  width: calc(100% + 440px + 120px);
+  padding-top: 110px;
+  padding-bottom: 100px;
+
+  .slider__button-wrapper {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 276px);
+    transform: translateX(-50%);
+    order: -1;
+    width: 175px;
+    // @media (max-width: $width-1200) {
+    //   width: 175px;
+    // }
+    // @media (max-width: $width-640) {
+    //   display: none;
+    // }
+  }
+  .slider__button {
+    width: 60px;
+    height: 60px;
+  }
+  .slider__slide {
+    height: 1535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 40px;
+  }
+
+  @media (max-width: $width-1200) {
+    padding-top: 91px;
+    padding-bottom: 50px;
+    .pet-card {
+      padding-top: 452px;
+      padding-bottom: 35px;
+    }
+    .pet-card__name {
+      padding-left: 26px;
+    }
+    .pet-card__photo {
+      height: fit-content;
+    }
+    .slider__button-wrapper {
+      width: 175px;
+    }
+    .slider__slide {
+      height: 1452px;
+      margin-right: 20px;
+    }
+  }
+  @media (max-width: $width-640) {
+    /* сдвиг, чтобы показать коалу рядом со львом как в дизайне */
+    transform: translateX(-930px);
+
+    padding-top: 0;
+    &:after {
+      display: none;
+    }
+    .pet-card {
+      width: 290px;
+      height: 600px;
+      margin-right: 20px;
+      padding-top: 350px;
+      padding-bottom: 20px;
+    }
+    .pet-card__button {
+      height: 50px;
+    }
+    .pet-card__description {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      line-height: 150%;
+    }
+    .pet-card__photo {
+      width: auto;
+      height: 333px;
+    }
+    .pet-card__title {
+      margin-bottom: 0;
+    }
+    .slider__button-wrapper {
+      display: none;
+    }
+    .slider__slide {
+      height: auto;
+      flex-direction: row;
+      margin-right: 0;
+    }
+    /* костыли, чтобы показать коалу рядом со львом как в дизайне */
+    .slider__slide:nth-child(3) {
+      .pet-card:first-child {
+        order: 1;
+      }
+    }
+  }
+  @media (max-width: $width-320) {
+    transform: translateX(-960px);
+    .pet-card {
+      width: 300px;
+    }
+  }
+}
+/* gradient for resolution more then 1920px */
+.pets-in-zoo__slider:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), #fff 100%);
+}
+.pets-in-zoo__title {
+  margin-bottom: 50px;
+  color: $main-color;
+  @media (max-width: $width-1200) {
+    margin-bottom: 30px;
+    margin-left: 96px;
+  }
+  @media (max-width: $width-640) {
+    max-width: 395px;
+    margin-left: 0;
+    text-align: center;
+  }
+  @media (max-width: $width-320) {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.slider__inner-wrapper {
+  display: flex;
+  transition: transform 0.5s linear;
+  will-change: transform;
+}
+.slider__radio-button-nav {
+  justify-content: space-between;
+  /* items*item__width + space-between*(items-1)*/
+  width: calc(8px * 4 + 20px * 3);
+  height: 10px;
+}
+.slider__radio-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $light-color;
+  border-radius: 100%;
+}
+.slider__radio-button.active {
+  background-color: #ffffff;
+}
+.slider__slide {
+  position: relative;
+}
+
+.slider__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__button--prev {
+  transform: rotate(180deg);
+}

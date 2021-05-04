@@ -1,0 +1,190 @@
+.donation {
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+  // height: 221px;
+  background-color: $body-color;
+}
+.donation__amount {
+  display: inline-block;
+  flex-grow: 1;
+  width: 100px; //for firefox compatibility width must be >=1px
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: #00000000;
+  color: $light-color;
+  -moz-appearance: textfield;
+  @media (max-width: $width-320) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+/* ===Hide spin from number input=== */
+.donation__amount::-webkit-outer-spin-button,
+.donation__amount::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* /===Hide spin from number input=== */
+.donation__amount::placeholder {
+  letter-spacing: 0;
+  color: $light-color;
+  opacity: 1;
+}
+.donation__amount:-ms-input-placeholder {
+  color: $light-color;
+}
+.donation__button {
+  width: 80px;
+  flex-shrink: 0;
+  border-left: none;
+  @media (max-width: $width-640) {
+    width: 74px;
+  }
+  @media (max-width: $width-320) {
+    width: 59px;
+  }
+}
+.donation .container {
+  justify-content: space-between;
+  padding-top: 52px;
+  padding-bottom: 47px;
+
+  @media (max-width: $width-640) {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+  }
+  @media (max-width: $width-320) {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+  }
+}
+.donation__currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  padding-left: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  color: $light-color;
+  @media (max-width: $width-320) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.donation__description {
+  max-width: 920px;
+  color: $light-color;
+  @media (max-width: $width-1200) {
+    max-width: 576px;
+  }
+  @media (max-width: $width-640) {
+    margin-bottom: 26px;
+    text-align: center;
+  }
+  @media (max-width: $width-320) {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+.donation__label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: $light-color;
+  @media (max-width: $width-640) {
+    text-align: center;
+  }
+}
+.donation__payment-form {
+  @media (max-width: $width-320) {
+    width: 100%;
+  }
+}
+.donation__title {
+  max-width: 905px;
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 500;
+  color: $light-color;
+  @media (max-width: $width-1200) {
+    margin-bottom: 31px;
+  }
+  @media (max-width: $width-640) {
+    text-align: center;
+  }
+  @media (max-width: $width-320) {
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+.donation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 75px;
+  border: 1px solid $light-color;
+  border-radius: 5px;
+  background-color: #00000000;
+  @media (max-width: $width-640) {
+    width: 363px;
+  }
+  @media (max-width: $width-320) {
+    width: 100%;
+    height: 45px;
+  }
+}
+
+@media (max-width: $width-1200) and (min-width: $width-640) {
+  .zoos + .donation {
+    .container {
+      max-width: 1120px;
+      padding-top: 35px;
+      padding-bottom: 27px;
+    }
+    .donation__description {
+      max-width: 740px;
+    }
+    .donation__label {
+      margin-bottom: 6px;
+    }
+    .donation__title {
+      margin-bottom: 17px;
+    }
+  }
+}
+@media (max-width: $width-320) {
+  .zoos + .donation {
+    .container {
+      padding-top: 23px;
+      padding-bottom: 51px;
+    }
+    .donation__label {
+      margin-bottom: 6px;
+    }
+    .donation__title {
+      margin-bottom: 21px;
+    }
+  }
+}

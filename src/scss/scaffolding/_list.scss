@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+.list__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: inherit;
+}
+.list__link {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+}

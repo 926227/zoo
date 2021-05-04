@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  color: $dark-color;
+}
+.container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  box-sizing: content-box;
+
+  @media (max-width: $width-1200) {
+    max-width: 1000px;
+  }
+  // @media (max-width: $width-640) {
+  //   max-width: 600px;
+  // }
+  @media (max-width: $width-320) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.description--small {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+}
+.description--big {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+.number-no-arrows {
+  -moz-appearance: textfield;
+}
+.number-no-arrows::-webkit-outer-spin-button,
+.number-no-arrows::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

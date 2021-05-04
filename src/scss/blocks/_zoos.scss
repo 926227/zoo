@@ -1,0 +1,349 @@
+.zoos {
+  position: relative;
+  display: flex;
+  width: 100%;
+  // justify-content: space-between;
+  padding-bottom: 0;
+  margin-bottom: 70px;
+}
+.zoos .container {
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  box-sizing: border-box;
+  width: 75%;
+  max-width: unset;
+  margin: 0;
+  margin-right: 13.54%;
+  // margin-right: 260px;
+  padding: 0;
+  padding-top: 55px;
+  padding-left: 40px;
+}
+.zoos__cam,
+.zoos__cam-card {
+  width: 100%;
+}
+.zoos__cam {
+  height: 100%;
+  border: none;
+}
+.zoos__cam-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  background-color: #00000066;
+  cursor: pointer;
+}
+.zoos__cam-card .stamp {
+  left: 10px;
+  background-color: transparent;
+  border: 1px solid $light-color;
+  border-radius: 0 0 5px 5px;
+}
+.zoos__cameras.slider {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  overflow: hidden;
+
+  width: 74.28%;
+  margin-right: 120px;
+  margin-left: auto;
+}
+.zoos__cameras .slider__inner-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  // width: calc((320px + 40px) * 4);
+  // margin-right: 13px;
+  // margin-left: 13px;
+}
+.zoos__cameras .slider__button {
+  width: 80px;
+  height: 80px;
+}
+.zoos__cameras .slider__button--prev {
+  order: -1;
+}
+
+.zoos__cameras.slider__button-wrapper {
+  position: relative;
+  bottom: 148px;
+  width: 87.5%;
+  height: 80px;
+  margin: 0;
+  margin-right: 28px;
+}
+.zoos__cameras .slider__slide {
+  width: 320px;
+  height: 209px;
+  margin-right: 40px;
+}
+
+.zoos__donate {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  width: 240px;
+  height: 74px;
+}
+.zoos__main-camera {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  border: none;
+}
+.zoos__sidebar {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  flex-shrink: 0;
+  // width: 11.45%;
+  width: 220px;
+  height: 846px;
+  background-color: $body-color;
+}
+.zoos__title {
+  align-self: center;
+  margin-bottom: 46px;
+  color: $main-color;
+}
+.zoos__subtitle {
+  align-self: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: $dark-color;
+}
+
+.zoos__iframe-wrapper {
+  width: 100%;
+  margin-bottom: 102px;
+  // align-self: flex-end;
+}
+.zoos__iframe-wrapper-inner {
+  position: relative;
+  /* adjust iframe hight proportionately 
+  its width by using padding of inner wrapper */
+  padding-top: 56.21%;
+}
+.zoos__sidebar.panel-opened {
+  width: 220px;
+}
+
+@media (max-width: $width-1200) {
+  .zoos {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .zoos .container {
+    align-items: flex-end;
+    box-sizing: border-box;
+    width: 90.41%;
+    max-width: unset;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+    padding-left: 20px;
+    margin-top: 34px;
+  }
+  .zoos__cameras.slider {
+    width: 81.46%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .zoos__cameras .slider__slide {
+    width: 265px;
+    height: 209px;
+    margin-right: 20px;
+  }
+  .zoos__cameras .slider__inner-wrapper {
+    // width: calc((265px + 20px) * 4);
+    margin: 0;
+  }
+  .zoos__cameras.slider__button-wrapper {
+    bottom: 153px;
+    width: 100%;
+    margin: 0;
+  }
+  .zoos__donate {
+    top: unset;
+    right: 40px;
+    height: 56px;
+    .button__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .zoos__iframe-wrapper {
+    align-self: flex-end;
+    margin-bottom: 15px;
+  }
+  .zoos__iframe-wrapper-inner {
+    position: relative;
+    padding-top: 74.14%;
+  }
+  .zoos__sidebar {
+    width: 9.59%;
+    height: 846px;
+  }
+  .zoos__sidebar.panel-opened {
+    position: fixed;
+    top: 110px;
+  }
+  .zoos__subtitle {
+    align-self: center;
+    margin-bottom: 26px;
+    margin-left: -9px;
+  }
+  .zoos__title {
+    align-self: flex-end;
+    margin-bottom: 25px;
+    margin-right: 310px;
+  }
+}
+@media (max-width: $width-640) {
+  .zoos {
+    margin-bottom: 81px;
+  }
+  .zoos .container {
+    width: 87.82%;
+    margin-top: 31px;
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+  .zoos__cameras.slider {
+    width: 82.1%;
+    margin: 0;
+  }
+  .zoos__cameras.slider__button-wrapper {
+    display: none;
+  }
+  .zoos__cameras .slider__slide {
+    width: 135px;
+    height: 106px;
+  }
+  .zoos__donate {
+    position: static;
+    width: 212px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+  .zoos__iframe-wrapper {
+    order: -1;
+    margin-bottom: 22px;
+  }
+
+  .zoos__sidebar {
+    width: 12.18%;
+    height: 500px;
+    top: 110px;
+  }
+  .zoos__subtitle {
+    align-self: flex-start;
+    margin-bottom: 19px;
+    margin-left: 18.08%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    text-transform: lowercase;
+  }
+  .zoos__subtitle::first-letter {
+    text-transform: uppercase;
+  }
+  .zoos__title {
+    order: -1;
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+  }
+}
+@media (max-width: $width-320) {
+  .zoos {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 27px;
+  }
+  .zoos .container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    left: -15.62%;
+    // width: 84.37%;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .zoos__cam-card .stamp {
+    left: 0;
+    width: 75px;
+    height: 23px;
+    .stamp__text {
+      margin-left: 7px;
+      font-size: 11px;
+    }
+    .stamp__picture {
+      width: 11.77px;
+      height: 11.77px;
+    }
+  }
+  .zoos__cameras.slider {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .zoos__donate {
+    order: 1;
+    right: unset;
+    left: unset;
+    width: 100%;
+  }
+  .zoos__sidebar {
+    width: 15.62%;
+    height: 300px;
+  }
+  .zoos__cameras .slider__slide {
+    width: 140px;
+    height: 110px;
+  }
+  .zoos__iframe-wrapper {
+    position: relative;
+    right: -10px;
+    width: 90%;
+  }
+  .zoos__subtitle {
+    margin-left: calc(15.62% + 30px);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  .zoos__title {
+    display: block;
+    margin-left: 15.62%;
+
+    // width: 100%;
+    // align-self: flex-end;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+  }
+}

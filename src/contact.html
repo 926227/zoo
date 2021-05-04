@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Online-zoo</title>
+</head>
+<body class="page">
+  <h1 class="visually-hidden">online zoo</h1>
+
+  <header class="page-header page__item">
+    <div class="container">
+      <a class="page-header__logo logo" href="./">
+        <img class="logo__picture" src="assets/images/logo.svg" width="96" heght="50" alt="logo image">
+      </a>
+      <div class="page-header__menu page-header__menu--closed">
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+        <nav class="page-header__nav">
+          <ul class="list">
+            <li class="list__item ">
+              <a class="list__link" href="./">about</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="map.html">map</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="zoos/panda.html">zoos</a>
+            </li>
+            <li class="list__item active">
+              <a class="list__link" href="contact.html">contact us</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <ul class="page-header__social-icons list social-icons">
+          <li class="list__item social-icons--youtube">
+            <a class="list__link" href="https://www.youtube.com/"></a>
+          </li>
+          <li class="list__item social-icons--instagram">
+            <a class="list__link" href="https://www.instagram.com/"></a>
+          </li>
+          <li class="list__item social-icons--facebook">
+            <a class="list__link" href="https://www.facebook.com/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <div class="contact__wrapper">
+        <h2 class="contact__title title">Get in touch</h2>
+        <p class="contact__description description--small">Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can. Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can. </p>
+      </div>
+      <form class="contact__form form" action="#">
+        <label class="form__label" for="name"><span>*</span> Your Name</label>
+        <input class="form__input" id="name" type="text" placeholder="First and last name" required>
+        <label class="form__label" for="email"><span>*</span> Your Email Address </label>
+        <input class="form__input" id="email" type="email" placeholder="Enter your email" required>
+        <label class="form__label" for="subject"><span>*</span> Subject </label>
+        <input class="form__input" id="subject" type="text" placeholder="Enter the subject" required>
+        <label class="form__label" for="message"><span>*</span> Message</label>
+        <textarea 
+        class="form__input form__input--message" 
+        id="message" 
+        name="message" 
+        placeholder="Enter your message" 
+        required></textarea>
+        <button class="form__submit button button--green" type="submit">
+          <div class="button__text">send message</div>
+          <div class="button__img"></div>
+        </button>
+      </form>
+
+    </div>
+
+  </section>
+
+  <footer class="page-footer page__item">
+    <div class="container">
+      <div class="page-footer__row">
+        <ul class="page-footer__logo-panel list">
+          <li class="list__item">
+            <a class="list__link" href="./">
+              <svg class="page-footer__promo-logo" width="96" height="50">
+                <use xlink:href="assets/images/logo.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list__item" title="Yem Digital">
+            <svg class="page-footer__promo-logo" width="50" height="50">
+              <use xlink:href="assets/icons/yem_digital.svg#logo"></use>
+            </svg>
+          </li>
+          <li class="list__item" title="Rolling Scopes School">
+            <svg class="page-footer__promo-logo" width="138" height="52">
+              <use xlink:href="assets/icons/rs_school_logo.svg#logo"></use>
+            </svg>
+          </li>
+        </ul>
+  
+        <ul class="page-footer__nav list">
+          <li class="list__item">
+            <a class="list__link" href="index.html">About</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="map.html">map</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="zoos/panda.html">Zoos</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+  
+        <button class="page-footer__donate button button--transparent-light-green">
+          <span class="button__text">donate for volunteers</span>
+          <div class="button__img"></div>
+        </button>
+      </div>
+
+      <div class="page-footer__row">
+        <ul class="page-footer__copyright list">
+          <li class="list__item">© 2021 DinaK </li>
+          <li class="list__item">© Yem Digital </li>
+          <li class="list__item">© RSSchool</li>
+        </ul>
+
+        <ul class="page-footer__social-icons list social-icons">
+          <li class="list__item social-icons--youtube">
+            <a class="list__link" href="https://www.youtube.com/"></a>
+          </li>
+          <li class="list__item social-icons--instagram">
+            <a class="list__link" href="https://www.instagram.com/"></a>
+          </li>
+          <li class="list__item social-icons--facebook">
+            <a class="list__link" href="https://www.facebook.com/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

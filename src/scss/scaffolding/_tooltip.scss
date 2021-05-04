@@ -1,0 +1,20 @@
+/* apply for elements, that do not have ::after or ::before  */
+
+*[tooltip]:hover,
+*[tooltip]:focus {
+  z-index: 1;
+}
+*[tooltip]:hover::after,
+*[tooltip]:focus::after {
+  content: attr(tooltip);
+  position: absolute;
+  transform: translateX(105%);
+  display: flex;
+  padding: 5px;
+  border-radius: 25%;
+  color: $light-color;
+  text-transform: capitalize;
+  font-weight: 500;
+  box-shadow: 3px 3px 2px #00000066;
+  background-color: $main-color-tranperent;
+}

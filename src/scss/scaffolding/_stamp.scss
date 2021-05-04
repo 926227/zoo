@@ -1,0 +1,29 @@
+.stamp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 120px;
+  height: 38px;
+  background-color: $second-color;
+  border-radius: 0px 0px 5px 0px;
+}
+.stamp__text {
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $light-color;
+}
+.stamp__picture {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url(./assets/icons/camera.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

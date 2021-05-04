@@ -1,0 +1,119 @@
+.popup {
+  position: fixed;
+  display: none;
+  z-index: 5;
+  top: 0px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #00000055;
+  overflow: hidden;
+}
+.popup__container {
+  position: relative;
+  width: 1160px;
+  height: 815px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 410px 80px 50px 80px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 4px 50px #000000c4;
+  border-radius: 5px;
+
+  background-image: url("./assets/images/popup-hero.jpg");
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+.popup__close {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 40px;
+    height: 3px;
+
+    background-color: #ffffff;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:hover::before,
+  &:hover::after {
+    background-color: #c8eeeb;
+  }
+}
+.popup__title {
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $second-color;
+}
+.popup__description {
+  max-width: 570px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+
+  color: $dark-color;
+}
+.popup__amount-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  label {
+    width: 120px;
+    height: 65px;
+  }
+
+  .popup__label-button--sum-other {
+    width: 200px;
+    height: 65px;
+  }
+}
+.popup__hidden-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.popup__label-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $light-color;
+
+  background-color: $main-color;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup__label-button:hover {
+  box-shadow: 0 0 20px #6f8d8bda;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Online-zoo</title>
+</head>
+<body class="page">
+  <h1 class="visually-hidden">online zoo</h1>
+
+  <header class="page-header page__item">
+    <div class="container">
+      <a class="page-header__logo logo" href="./">
+        <img class="logo__picture" src="assets/images/logo.svg" width="96" heght="50" alt="logo image">
+      </a>
+      <div class="page-header__menu page-header__menu--closed">
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+        <nav class="page-header__nav">
+          <ul class="list">
+            <li class="list__item">
+              <a class="list__link" href="./">about</a>
+            </li>
+            <li class="list__item active">
+              <a class="list__link" href="map.html">map</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="zoos/panda.html">zoos</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="contact.html">contact us</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <ul class="page-header__social-icons list social-icons">
+          <li class="list__item social-icons--youtube">
+            <a class="list__link" href="https://www.youtube.com/"></a>
+          </li>
+          <li class="list__item social-icons--instagram">
+            <a class="list__link" href="https://www.instagram.com/"></a>
+          </li>
+          <li class="list__item social-icons--facebook">
+            <a class="list__link" href="https://www.facebook.com/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="map">
+    <h2 class="map__title">find where are the animals live</h2>
+    <div class="map__canvas">
+      <svg class="map__picture" width="700" viewBox="0 0 1406 913">
+        <use xlink:href="assets/images/map.svg#map"></use>
+      </svg>
+      <a class="pin kept-in-zoo" href="zoos/eagle.html" tooltip="eagle, north america" >
+        <img class="pin__img" src="assets/icons/animal-ico-1.svg" alt="eagle">
+      </a>
+      <a class="pin" href="#" tooltip="alligator, north america">
+        <img class="pin__img" src="assets/icons/animal-ico-2.svg" alt="alligator">
+      </a>
+      <a class="pin" href="#" tooltip="lion, africa">
+        <img class="pin__img" src="assets/icons/animal-ico-3.svg"  alt="lion">
+      </a>
+      <a class="pin kept-in-zoo" href="zoos/gorilla.html" tooltip="gorilla, africa">
+        <img class="pin__img" src="assets/icons/animal-ico-4.svg"  alt="gorilla">
+      </a>
+      <a class="pin kept-in-zoo" href="zoos/lemur.html" tooltip="lemur, africa">
+        <img class="pin__img" src="assets/icons/animal-ico-5.svg"  alt="lemur">
+      </a>
+      <a class="pin kept-in-zoo" href="zoos/panda.html" tooltip="panda, asia">
+        <img class="pin__img" src="assets/icons/animal-ico-6.svg"  alt="panda">
+      </a>
+      <a class="pin" href="#" tooltip="tiger, asia">
+        <img class="pin__img" src="assets/icons/animal-ico-7.svg"  alt="tiger">
+      </a>
+      <a class="pin" href="#" tooltip="coala, australia">
+        <img class="pin__img" src="assets/icons/animal-ico-8.svg"  alt="coala">
+      </a>
+    </div>
+    
+  </main>
+
+  <footer class="page-footer page__item">
+    <div class="container">
+      <div class="page-footer__row">
+        <ul class="page-footer__logo-panel list">
+          <li class="list__item">
+            <a class="list__link" href="./">
+              <svg class="page-footer__promo-logo" width="96" height="50">
+                <use xlink:href="assets/images/logo.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list__item" title="Yem Digital">
+            <svg class="page-footer__promo-logo" width="50" height="50">
+              <use xlink:href="assets/icons/yem_digital.svg#logo"></use>
+            </svg>
+          </li>
+          <li class="list__item" title="Rolling Scopes School">
+            <svg class="page-footer__promo-logo" width="138" height="52">
+              <use xlink:href="assets/icons/rs_school_logo.svg#logo"></use>
+            </svg>
+          </li>
+        </ul>
+  
+        <ul class="page-footer__nav list">
+          <li class="list__item">
+            <a class="list__link" href="index.html">About</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="map.html">map</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="zoos/panda.html">Zoos</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+  
+        <button class="page-footer__donate button button--transparent-light-green">
+          <span class="button__text">donate for volunteers</span>
+          <div class="button__img"></div>
+        </button>
+      </div>
+
+      <div class="page-footer__row">
+        <ul class="page-footer__copyright list">
+          <li class="list__item">© 2021 DinaK </li>
+          <li class="list__item">© Yem Digital </li>
+          <li class="list__item">© RSSchool</li>
+        </ul>
+
+        <ul class="page-footer__social-icons list social-icons">
+          <li class="list__item social-icons--youtube">
+            <a class="list__link" href="https://www.youtube.com/"></a>
+          </li>
+          <li class="list__item social-icons--instagram">
+            <a class="list__link" href="https://www.instagram.com/"></a>
+          </li>
+          <li class="list__item social-icons--facebook">
+            <a class="list__link" href="https://www.facebook.com/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

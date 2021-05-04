@@ -1,0 +1,121 @@
+.contact .container {
+  justify-content: space-between;
+  padding-top: 965px;
+  padding-bottom: 150px;
+  background-image: url(assets/images/contact.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 98%;
+}
+
+.contact__title {
+  margin-bottom: 50px;
+  color: $main-color;
+}
+.contact__description {
+  width: 545px;
+}
+.contact__form.form {
+  width: 680px;
+}
+.contact .form__submit {
+  width: 360px;
+  height: 75px;
+}
+
+@media (max-width: $width-1200) {
+  .contact .container {
+    box-sizing: border-box;
+    flex-direction: column;
+    min-width: 100%;
+    padding-top: 72.5%;
+    padding-right: 230px;
+    padding-bottom: 100px;
+    padding-left: 230px;
+    background-position: 0 0;
+    background-size: 117%;
+  }
+  .contact__description {
+    width: 113%;
+    text-align: center;
+  }
+  .contact__form.form {
+    width: 100%;
+  }
+
+  .contact__title {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .contact__wrapper {
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: $width-640) {
+  .contact .container {
+    flex-direction: column;
+    padding-top: 76.125%;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    background-position: 28% 0;
+    background-size: 117%;
+  }
+  .contact__description {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .contact__form.form {
+    width: 100%;
+  }
+  .contact .form__submit {
+    align-self: center;
+    width: 290px;
+    margin: 0 auto;
+    .button__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .contact__title {
+    margin-bottom: 15px;
+  }
+  .contact__wrapper {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: $width-320) {
+  .contact .container {
+    flex-direction: column;
+    padding-top: 78.125%;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    background-position: 28% 0;
+    background-size: 117%;
+  }
+  .contact__description {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .contact__form.form {
+    width: 100%;
+  }
+  .contact .form__submit {
+    width: 100%;
+    height: 49px;
+  }
+  .contact__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .contact__wrapper {
+    margin-bottom: 44px;
+  }
+}
